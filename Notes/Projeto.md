@@ -20,15 +20,16 @@
 ## Versão Inicial 
 
 - Versão inicial: 
-	- Probabilidade
+	- Integer/Probabilidade
 		- `0` normal function
 		- `1` imbalance fault
 		- `2` horizontal misalignment fault
 		- `3` vertical misalignment fault 
 - O nível de criticidade (float ?);
-	- `0 - 1 -> Low`
-	- `1 - 2 -> Medium`
-	- `2 - 3 -> High`
+	- `0.0 -> Normal`
+	- `1.0 -> Low`
+	- `2.0 -> Medium`
+	- `3.0 -> High`
 
 
 	

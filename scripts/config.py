@@ -38,4 +38,3 @@ IMBALANCE_HIGH_FILES = glob.glob(str(DATASET_BASE_DIR) + '/imbalance/30g/*.csv')
                         + glob.glob(str(DATASET_BASE_DIR) + '/imbalance/35g/*.csv')
 
 OUTPUT_DATA_DIR = Path('./checkpoints')
-OUTPUT_DATA_FILE = OUTPUT_DATA_DIR / Path('raw_data.p')

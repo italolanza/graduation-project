@@ -130,3 +130,6 @@ dmypy.json
 
 # Obsidian Vault Configuration
 .obsidian
+
+#Code project folder
+.vscode

@@ -10,4 +10,8 @@ São arrays/vetores de n-dimensões. O **`shape`** de um Tensor define o tamanho
 
 ## Notas
 + No TensorFlow, o `shape` e contabilizado de fora para dentro. Isto considera-se primeiro o tamanho da dimensao mais externas e depois o tamanho das dimensoes mais internas.
-+ Podemos pensar em operações em Tensores em termos de grafos (direcionais, hierarquicos e aciclicos). Um nó pode ser um Tensor (dados) ou uma operação aplicada a outros nós (Tensores).
++ Podemos pensar em operações em Tensores em termos de grafos (direcionais, hierarquicos e aciclicos). Um nó pode ser um Tensor (dados) ou uma operação aplicada a outros nós (Tensores) com possíveis entradas e que pode fornecer saídas.
++ No TensorFlow, `Graphs` são conjuntos de *nodes* (nós) conectados. Essas conexões são chamadas de `edges` (arestas).
++ **`Variables`** conseguem amarzenar valor de pesos e *bias* durante sessões (*sessions*) porém precisam ser inicializadas antes de serem usadas em uma sessão;
++ **`Placeholders`** são inicialmente vazios e depos são preenchidos com os valores de treinamento.
+  + É necessário declarar o tipo de dado que o `Placeholder` irá armazenar préviamente e opcionalmente o *shape*;

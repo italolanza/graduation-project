@@ -80,3 +80,6 @@
 + `tf.Variable(initial_value=<Tensor>)` -> Creates a *Variable* object; 
 + `tf.global_variables_initializar()` -> Returns the initializer. After running it on a session will initialize all *Variables* objects;
 + `tf.placdeholder(dtype, shape=())` -> Creates a *Placeholder* object;
++ `tf.train.Saver()` -> Creates a saver object
+  + `saver.save(tf.Session(), <file/path/file.ckpt>)` -> Save the trained model in the selected file path;
+  + `saver.restore(tf.Session(), <file/path/file.ckpt>)`-> Restore the trained model;

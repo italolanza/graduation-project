@@ -81,3 +81,16 @@ Texto: Mudar de Dispositivos Embarcadas para Sistemas Embarcadas
 [11/03] 3 - Exportar estrutura da rede no formato ONNX (ou outro)
 [11/03] 4 - Implementar usando framework encontrado na revisão (ao menos 2)
 [25/03] 5 - Testes de a) Tempo de execução, b) Consumo de recursos
+
+
+## 06/04/2021
+
+Metricas -> 
++ `Tempo de execucao` -> tempo de execucao de cada um dos runtimes/biblitoecas (Raspberry e/ou PC)
+  + Verificar as opcoes de profiling do onnxruntime
++ `Uso de memoria` -> 
++ `Consumo de energia` -> 
++ `Accuracia` -> verificar se ha alguma diferenca 
+
+
++ Talvez testar com uma outra rede mais complexa

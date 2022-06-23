@@ -135,3 +135,7 @@ dmypy.json
 .vscode
 
 todo.md
+
+onnxruntime_profile*
+mprofile*
+*.zip

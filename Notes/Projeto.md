@@ -48,3 +48,13 @@
   	- **`Low`** -> 0.51mm, 0.63mm
 	- **`Medium`** -> 1.27mm, 1.40mm
 	- **`High`** -> 1.78mm, 1.90mm
+
+## Testando e comparando modelos/frameworks
+
+Metricas escolhidas:
++ `Tempo de execucao` -> tempo de execucao de cada um dos runtimes/biblitoecas (Raspberry e/ou PC)
++ `Uso de memoria` -> 
++ `Consumo de energia` -> 
++ `Accuracia` -> verificar se ha alguma diferenca 
+
+### ONNX Runtime

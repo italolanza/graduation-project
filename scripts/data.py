@@ -4,7 +4,8 @@ import glob
 import pandas as pd
 import numpy as np
 
-_DATASET_BASE_DIR = Path("/home/italolanza/workspace/TG/dataset/")
+# _DATASET_BASE_DIR = Path("/home/italolanza/workspace/TG/dataset/")
+_DATASET_BASE_DIR = Path("/home/italolanza/Workspace/TG/dataset")
 _DATASET_FILE_PATH = _DATASET_BASE_DIR.joinpath('dataset_completo.csv')
 _VALIDATION_INPUT_DATA = _DATASET_BASE_DIR.joinpath('x_test.csv')
 _VALIDATION_OUTPUT_DATA = _DATASET_BASE_DIR.joinpath('y_test.csv')

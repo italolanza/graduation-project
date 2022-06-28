@@ -6,6 +6,11 @@ import numpy as np
 from config import models_path
 from data import x_data, y_data
 from memory_profiler import profile
+from timeit import default_timer as timer
+
+
+# ...
+
 
 
 # Load a TensorProto
@@ -27,11 +32,14 @@ session = rt.InferenceSession(models_path['onnx'], providers=providers, sess_opt
 input_name = [session.get_inputs()[0].name]
 output_names = [session.get_outputs()[0].name]
 
-@profile
+# @profile
 def run_inference():
+    # start = timer()
     # run the predictions
     onnx_pred = session.run(output_names, {"input":np.float32(x_data)})
     # session.end_profiling()
+    # end = timer()
+    # print(f"{end - start} seconds to execute the inference !") # Time in seconds, e.g. 5.38091952400282
     return onnx_pred
 
 
@@ -39,6 +47,7 @@ def run_inference():
 if __name__ == '__main__':
     onnx_pred = run_inference()
     session.end_profiling()
+    
     # results
     # print('ONNX Output:', onnx_pred[0])
 

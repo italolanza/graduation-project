@@ -5,7 +5,8 @@ This file/module contains configuration data used by the other modules
 from pathlib import Path
 import glob
 
-DATASET_BASE_DIR = Path("/home/italolanza/workspace/TG/dataset/")
+# DATASET_BASE_DIR = Path("/home/italolanza/workspace/TG/dataset/") # desktop
+DATASET_BASE_DIR = Path("/home/italolanza/Workspace/TG/dataset/") # laptop
 DATASET_FILE_PATH = DATASET_BASE_DIR.joinpath('dataset_completo.csv')
 
 # NORMAL_FILES = glob.glob(str(DATASET_BASE_DIR) + '/normal/*.csv')
@@ -36,15 +37,20 @@ DATASET_FILE_PATH = DATASET_BASE_DIR.joinpath('dataset_completo.csv')
 # IMBALANCE_HIGH_FILES = glob.glob(str(DATASET_BASE_DIR) + '/imbalance/30g/*.csv') \
 #                         + glob.glob(str(DATASET_BASE_DIR) + '/imbalance/35g/*.csv')
 
-OUTPUT_DATA_DIR = Path('/home/italolanza/workspace/TG/')
+# OUTPUT_DATA_DIR = Path('/home/italolanza/workspace/TG/')
+OUTPUT_DATA_DIR = Path('/home/italolanza/Workspace/TG/')
 
+# _models_base_path="/home/italolanza/workspace/TG/graduation-project/models" #desktop
+_models_base_path="/home/italolanza/Workspace/TG/graduation-project/models" #laptop
 models_path = {
-    'onnx': '/home/italolanza/workspace/TG/graduation-project/models/onnx/sequential.onnx',
-    'tf_lite': '/home/italolanza/workspace/TG/graduation-project/models/tf_lite/model.tflite',
-    'connxr': '/home/italolanza/workspace/TG/graduation-project/models/cONNXr/sequential.onnx',
-    'keras': '/home/italolanza/workspace/TG/graduation-project/models/tf_model/'
+    'onnx': f"{_models_base_path}/onnx/sequential.onnx",
+    'tf_lite': f"{_models_base_path}/models/tf_lite/model.tflite",
+    'connxr': f"{_models_base_path}/cONNXr/sequential.onnx",
+    'keras': f"{_models_base_path}/tf_model/"
 }
 
+# _frameworks_base_path = "/home/italolanza/workspace/TG/runtimes" # desktop
+_frameworks_base_path = "/home/italolanza/Workspace/TG/runtimes" # laptop
 frameworks_path = {
-    'connxr': '/home/italolanza/workspace/TG/runtimes/cONNXr/'
+    'connxr': f"{_frameworks_base_path}/cONNXr/"
 }

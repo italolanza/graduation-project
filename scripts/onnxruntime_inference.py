@@ -6,12 +6,6 @@ import numpy as np
 from config import models_path
 from data import x_data, y_data
 from memory_profiler import profile
-from timeit import default_timer as timer
-
-
-# ...
-
-
 
 # Load a TensorProto
 # new_tensor = onnx.TensorProto()

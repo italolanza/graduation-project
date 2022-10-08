@@ -5,6 +5,8 @@ This repository is going to be used to store all code related to my final gradua
 
 Its contains the basic trained tensor flow based network that is going to be used by the others frameworks.
 
+To enable the conda environment: `conda activate motor-fault-classification`
+
 
 ## Todo
 
